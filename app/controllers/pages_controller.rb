@@ -1,6 +1,10 @@
 class PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
 
+  def iamhome
+    redirect_to(:action => "home")
+    puts "in iamhome action"
+  end
 
   def home
   end
