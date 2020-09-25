@@ -1,7 +1,21 @@
+To download branch from Github
+git checkout <branch name>
+
+To add, commit to Git
+git add .
+git commit -m "<TEXT>"
+
+to push to github
+git push -u origin <branch name>
+
 GIT / GITHUB
 https://opensource.com/article/18/2/how-clone-modify-add-delete-git-files
 
+- switch from master to branch
 https://devconnected.com/how-to-switch-branch-on-git/
+
+- Push to a remote branch
+https://devconnected.com/how-to-push-git-branch-to-remote/#:~:text=In%20order%20to%20push%20a,branch%20name%20to%20be%20pushed.&text=If%20you%20are%20not%20already,to%20switch%20to%20your%20branch.
 
 HEROKU
 https://devcenter.heroku.com/articles/pipelines#:~:text=A%20pipeline%20is%20a%20group,Staging
