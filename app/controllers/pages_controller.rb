@@ -2,8 +2,16 @@ class PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
 
   def iamhome
+
+    #grab the child name
+    child = params[:child]
+
+    #call mailer and pass in child name
+    ChildMailer.child_is_home(child).deliver_now
+
+    #redirect to the homepage
     redirect_to(:action => "home")
-    puts "in iamhome action"
+
   end
 
   def home
