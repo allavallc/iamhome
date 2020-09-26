@@ -89,6 +89,26 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+
+  # Ignore bad email addresses and do not raise email delivery errors.
+  # Set this to true and configure the email server for immediate delivery to raise delivery errors.
+   config.action_mailer.raise_delivery_errors = true
+
+  #change mail delivery to either :smtp, :sendmail, :file, :test
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default_url_options = { :host => 'iamhome-prod.herokuapp.com' }
+
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587, #port: 80,
+    domain: "www.philaprops.com",
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: "allavallc@gmail.com", #ENV["GMAIL_USERNAME"],
+    password: "Allava_1", #ENV["GMAIL_PASSWORD"]
+  }
+
   # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector
   # middleware. The `delay` is used to determine how long to wait after a write
