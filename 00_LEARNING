@@ -1,3 +1,8 @@
+PUSH BRANCH TO GITHUB BRANCH (NOT MASTER)
+git add .
+git commit -m "<TEXT>"
+git push -u origin <BRANCH>
+
 To download branch from Github
 git checkout <branch name>
 
