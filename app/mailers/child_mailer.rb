@@ -16,7 +16,7 @@ class ChildMailer < ApplicationMailer
     @sender_email = "allavallc@gmail.com"
 
     #reecipient info
-    @recipient_email = "adefilippo@gmail.com" #"7133043238@txt.att.net"
+    @recipient_email = "7133043238@txt.att.net"
 
     #send mail
     mail to: @recipient_email , from: @sender_email, subject: @message
