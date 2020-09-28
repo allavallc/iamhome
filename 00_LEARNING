@@ -3,15 +3,12 @@ git add .
 git commit -m "<TEXT>"
 git push -u origin <BRANCH>
 
-To download branch from Github
+To switch branches locally
 git checkout <branch name>
 
 To add, commit to Git
 git add .
 git commit -m "<TEXT>"
-
-to push to github
-git push -u origin <branch name>
 
 GIT / GITHUB
 https://opensource.com/article/18/2/how-clone-modify-add-delete-git-files
@@ -24,3 +21,6 @@ https://devconnected.com/how-to-push-git-branch-to-remote/#:~:text=In%20order%20
 
 HEROKU
 https://devcenter.heroku.com/articles/pipelines#:~:text=A%20pipeline%20is%20a%20group,Staging
+
+BOOK ON GIT
+https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches
