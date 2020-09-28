@@ -1,4 +1,6 @@
 # README
+9/23/2020 8:46 am - did this actually work? Please!!
+
 9/23/2020 8:38 am - did this actually work?
 
 This is AD and my first Github commit.
