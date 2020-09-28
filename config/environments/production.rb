@@ -106,7 +106,7 @@ Rails.application.configure do
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: "allavallc@gmail.com", #ENV["GMAIL_USERNAME"],
-    password: "Allava_1", #ENV["GMAIL_PASSWORD"]
+    password: "ynmzlwthgweuutnm"#{}"Allava_1", #ENV["GMAIL_PASSWORD"]
   }
 
   # Inserts middleware to perform automatic connection switching.
