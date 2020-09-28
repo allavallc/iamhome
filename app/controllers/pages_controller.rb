@@ -10,11 +10,16 @@ class PagesController < ApplicationController
     ChildMailer.child_is_home(child).deliver_now
 
     #redirect to the homepage
-    redirect_to(:action => "home")
+    redirect_to root_path, notice: '谢谢！'
 
   end
 
   def home
+
+    if !params[:notice].blank?
+       flash[:notice]
+    end
+
   end
 
   # GET /pages

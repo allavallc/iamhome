@@ -10,6 +10,11 @@
   </head>
 
   <body>
+     <!--below allows to 'flash' users messages if they have issues logging in, etc. -->
+    <% flash.each do |name, msg| %>
+      <%= content_tag(:div, msg, class: "container alert alert-#{name}", style:'background-color: lightgreen') %>
+    <% end %>
+    <!-- end flash -->
     <%= yield %>
   </body>
 </html>
