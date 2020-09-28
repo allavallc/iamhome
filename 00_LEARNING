@@ -1,3 +1,9 @@
+PUSH BRANCH TO GITHUB BRANCH (NOT MASTER)
+git add .
+git commit -m "<TEXT>"
+git push -u origin <BRANCH>
+
+
 GIT / GITHUB
 https://opensource.com/article/18/2/how-clone-modify-add-delete-git-files
 
